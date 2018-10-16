@@ -1,0 +1,15 @@
+spring:
+  rabbitmq:
+    host: 118.25.87.131
+    port: 5672
+    username: wangjie
+    password: ENC(0V5vW8MwVLxTXEmQLNrB0CahCc+gL/Dm)
+    virtual-host: /
+    #发送确认
+    publisher-confirms: true
+    #无效路由返回
+    publisher-returns: true
+    template:
+      mandatory: true
+server:
+  port: 21000

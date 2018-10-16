@@ -1,0 +1,20 @@
+
+spring:
+  rabbitmq:
+    host: 118.25.87.131
+    port: 5672
+    username: wangjie
+    password: ENC(0V5vW8MwVLxTXEmQLNrB0CahCc+gL/Dm)
+    virtual-host: /
+    listener:
+      simple:
+        acknowledge-mode: manual
+        #初始连接数量
+        concurrency: 5
+        #最大连接数量
+        max-concurrency: 10
+        #限流
+        prefetch: 1
+
+server:
+  port: 21001
