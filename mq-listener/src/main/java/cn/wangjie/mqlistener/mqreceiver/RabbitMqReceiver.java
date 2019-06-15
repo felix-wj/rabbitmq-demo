@@ -27,7 +27,7 @@ public class RabbitMqReceiver {
     @RabbitListener(bindings = @QueueBinding(
             value = @Queue(value = "demo-queue", durable = "true"),
             exchange = @Exchange(name = "demo-exchange", durable = "true", type = "topic"),
-            key = "demo-queue"
+            key = "demo-routing-key"
         )
     )
     @RabbitHandler

@@ -35,7 +35,7 @@ public class RabbitMqController {
         rabbitTemplate.setReturnCallback(returnCallback);
         //消息唯一ID
         CorrelationData correlationData = new CorrelationData("消息id");
-        rabbitTemplate.convertAndSend("demo-exchange","demo-queue-test", content, correlationData);
+        rabbitTemplate.convertAndSend("demo-exchange","demo-routing-key", content, correlationData);
         return content;
     }
     final RabbitTemplate.ConfirmCallback confirmCallback = (correlationData, ack, cause) -> {

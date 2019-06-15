@@ -3,7 +3,7 @@ spring:
     host: 118.25.87.131
     port: 5672
     username: wangjie
-    password: ENC(0V5vW8MwVLxTXEmQLNrB0CahCc+gL/Dm)
+    password: ENC(z7plwK3pw298dm5OYesIF25uGUlSkYOt)
     virtual-host: /
     #发送确认
     publisher-confirms: true
