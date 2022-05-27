@@ -51,6 +51,7 @@ public class RabbitMqController {
     final RabbitTemplate.ReturnCallback returnCallback = new RabbitTemplate.ReturnCallback() {
         @Override
         public void returnedMessage(Message message, int replyCode, String replyText, String exchange, String routingKey) {
+            System.out.println("returnCallback: ");
             System.out.println(message.toString());
             System.out.println(replyCode);
             System.out.println(replyText);

@@ -1,10 +1,10 @@
 
 spring:
   rabbitmq:
-    host: 118.25.87.131
+    host: localhost
     port: 5672
-    username: wangjie
-    password: ENC(z7plwK3pw298dm5OYesIF25uGUlSkYOt)
+    username: rabbitmq
+    password: rabbitmq
     virtual-host: /
     listener:
       simple:
